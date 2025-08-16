@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="icon" type="image/png" href="asset/p1.jpg">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="judul"><b>Form Pendaftaran Penerimaan Mahasiswa Baru PUB Angkatan 23</b>
+            <div class="img">
+                <img src="asset/p1.jpg" alt="logo pub" class="logo">
+            </div>
+        </h2>
+    </header>
+    <main>
+        <form action="">
+            <fieldset class="outer-dd">
+                <legend>Data Diri</legend>
+                <div class="data-diri">
+                    <div class="first-row-dd">
+                        <div class="nama-lengkap">
+                            <label for="">Nama Lengkap :</label>
+                            <input class="nama-L" type="text" placeholder="Masukkan Nama Lengkap">
+                        </div>
+                        <label for="">Nomor Identitas(NIK) :</label>
+                        <input type="text" placeholder="Masukkan NIK" class="nik">
+                    </div>
+                    <div class="second-row-dd">
+                        <label for="">Tempat Lahir :</label>
+                        <input type="text" placeholder="Masukkan Tempat lahir">
+                        <label for="">Tanggal Lahir :</label>
+                        <input type="date">
+                        <label for="">Jenis Kelamin :
+                            <input type="radio" name="jenis-k"> Laki-Laki
+                            <input type="radio" name="jenis-k"> Perempuan
+                        </label>
+                    </div>
+                    <div class="third-row-dd">
+                        <label for="">Kewarganegaraan :</label>
+                        <input type="text" placeholder="Masukkan Kewarganegaraan">
+                        <label for="">Agama :
+                            <select>
+                                <option value="" selected>Pilih</option>
+                                <option value="">Islam</option>
+                                <option value="">Protestan</option>
+                                <option value="">Katolik</option>
+                                <option value="">Hindu</option>
+                                <option value="">Buddha</option>
+                                <option value="">Konghucu</option>
+                            </select>
+                        </label>
+                        <label for="">No. Telpon :</label>
+                        <input type="number" placeholder="Masukkan No. Telpon">
+                    </div>
+                    <div class="fourth-row-dd">
+                        <label for="">Email :</label>
+                        <input type="email" placeholder="Masukkan Email">
+                        <label for="">Nama Ibu Kandung :</label>
+                        <input type="text" placeholder="Masukkan Nama Ibu Kandung">
+                        <label for="">Nama Ayah Kandung :</label>
+                        <input type="text" placeholder="Masukkan Nama Ayah Kandung">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="outer-da">
+                <legend>Data Alamat Asal</legend>
+                <div class="first-row-da">
+                    <label for="">Alamat : <br></label>
+                    <textarea name="" id="" cols="30" rows="4" placeholder="Isi Alamat"></textarea>
+                    <label for="">Kecamatan :</label>
+                    <input type="text" placeholder="Masukkan Kecamatan">
+                    <label for="">Kabupaten :</label>
+                    <input type="text" placeholder="Masukkan Kabupaten">
+                </div>
+                <div class="second-row-da">
+                    <label for="">Provinsi :</label>
+                    <input type="text" placeholder="Masukkan Provinsi">
+                    <label for="">Kode Pos :</label>
+                    <input type="number" placeholder="Kode Pos">
+                </div>
+            </fieldset>
+            <fieldset class="outer-dp">
+                <legend>Data Pendidikan</legend>
+                <div class="data-pendidikan">
+                    <div class="first-row-dp">
+                        <label for="">Pendidikan Terakhir :
+                            <input type="checkbox"> SD/MI
+                            <input type="checkbox"> SMP/MTS
+                            <input type="checkbox"> SMA/SMK/MA
+                        </label>
+                    </div>
+                    <div class="second-row-dp">
+                        <label for="">Nama Sekolah :</label>
+                        <input type="text" placeholder="Masukkan Nama Sekolah">
+                        <label for="">NPSN :</label>
+                        <input type="number" placeholder="NPSN">
+                        <label for="">Rata-Rata Nilai Rapot :</label>
+                        <input type="text" placeholder="Rata-Rata">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="outer-prodi">
+                <legend>Pilihan Program Studi</legend>
+                <div class="prodi">
+                    <label for="">Pilih Program Studi 1 :
+                        <select>
+                            <option value="">Pilih</option>
+                            <option value="">S1 Teknik Informatika</option>
+                            <option value="">S1 Teknik Industri</option>
+                            <option value="">S1 Akuntansi</option>
+                            <option value="">D3 Manajemen Informatika</option>
+                        </select>
+                        <label for="">Pilih Program Studi 2 :
+                            <select>
+                                <option value="">Pilih</option>
+                                <option value="">S1 Teknik Informatika</option>
+                                <option value="">S1 Teknik Industri</option>
+                                <option value="">S1 Akuntansi</option>
+                                <option value="">D3 Manajemen Informatika</option>
+                            </select>
+                        </label>
+                </div>
+            </fieldset>
+            <fieldset class="outer-wali">
+                <legend>Data Wali</legend>
+                <label for="">Nama Wali :</label>
+                <input type="text" placeholder="Masukkan Nama Wali">
+                <label for="">Hubungan dengan Wali :</label>
+                <input type="text" placeholder="Contoh: Paman, Kakak, dll">
+                <label for="">Pekerjaan Wali :</label>
+                <input type="text" placeholder="Pekerjaan">
+                <label for="">No. Telpon Wali :</label>
+                <input type="number" placeholder="Masukkan No. Wali">
+            </fieldset>
+
+            <fieldset class="outer-akademik">
+                <legend>Data Akademik Tambahan</legend>
+                <label for="">Jumlah Saudara Kandung :</label>
+                <input type="number" placeholder="Contoh: 2">
+                <label for="">Bahasa Sehari-hari :</label>
+                <input type="text" placeholder="Contoh: Indonesia, Jawa">
+                <label for="">Pernah Mengikuti Lomba Akademik?</label>
+                <select>
+                    <option value="">Pilih</option>
+                    <option value="ya">Ya</option>
+                    <option value="tidak">Tidak</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="outer-kesehatan">
+                <legend>Informasi Kesehatan</legend>
+                <label for="">Golongan Darah :</label>
+                <select>
+                    <option value="">Pilih</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                    <option value="O">O</option>
+                </select>
+                <label for="">Penyakit yang Pernah Diderita :</label>
+                <input type="text" placeholder="Contoh: Asma, DB, dll">
+                <label for="">Disabilitas:</label>
+                <select>
+                    <option value="">Pilih</option>
+                    <option value="tidak">Tidak</option>
+                    <option value="ya">Ya</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="outer-upload">
+                <legend>Upload Dokumen</legend>
+                <label for="">Foto Diri 3x4:</label>
+                <input type="file" accept=".jpg,.jpeg,.png">
+                <label for="">Scan Ijazah:</label>
+                <input type="file" accept=".pdf">
+                <label for="">Scan Kartu Keluarga:</label>
+                <input type="file" accept=".pdf">
+            </fieldset>
+
+            <fieldset class="outer-tes">
+                <legend>Informasi Tes Masuk</legend>
+                <label for="">Pilihan Lokasi Tes :</label>
+                <select>
+                    <option value="">Pilih</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="yogyakarta">Yogyakarta</option>
+                    <option value="surabaya">Surabaya</option>
+                </select>
+                <label for="">Pilihan Jenis Tes :</label>
+                <select>
+                    <option value="">Pilih</option>
+                    <option value="offline">Offline (Datang Langsung)</option>
+                    <option value="online">Online (Daring)</option>
+                </select>
+            </fieldset>
+        </form>
+        <div class="pernyataan">
+            <input type="checkbox">Saya menyatakan bahwa data yang isikan di atas sudah benar
+        </div>
+    </main>
+    <div class="button">
+        <button onclick="alert('Pendaftaran Berhasil')">Daftar</button>
+        <button onclick="return confirm('Anda Yakin Akan Mereset?')">Reset</button>
+    </div>
+</body>
+
+</html>

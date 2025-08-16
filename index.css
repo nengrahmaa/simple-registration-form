@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap; /* Biar bisa turun ke bawah kalau layar kecil */
+}
+
+.judul, .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.judul {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+/* ================= MAIN ================= */
+main {
+    font-size: 13px;
+    background-color: azure;
+}
+
+legend {
+    font-size: 14px;
+    background-color: rgb(138, 187, 237);
+    border-radius: 2px;
+    padding: 3px 8px;
+}
+
+fieldset {
+    margin: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.first-row-dd {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0fr 0fr;
+    gap: 10px;
+}
+
+.nik {
+    width: 100px;
+    margin: 10px;
+}
+
+.nama-L {
+    width: 600px;
+    margin: 10px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+    /* Header */
+    header {
+        flex-direction: column; /* Logo di atas, judul di bawah */
+    }
+    .logo {
+        width: 120px;
+    }
+    .judul {
+        font-size: 1.2rem;
+    }
+
+    /* Form */
+    .first-row-dd {
+        grid-template-columns: 1fr; /* Jadi satu kolom */
+    }
+    .nik, .nama-L {
+        width: 100%;
+        margin: 5px 0;
+    }
+    legend {
+        font-size: 12px;
+    }
+    main {
+        font-size: 12px;
+    }
+}
+
+/* Tablet (601px – 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Header */
+    header {
+        flex-direction: row; /* Logo & judul sejajar */
+    }
+    .logo {
+        width: 140px;
+    }
+    .judul {
+        font-size: 1.4rem;
+    }
+
+    /* Form */
+    .first-row-dd {
+        grid-template-columns: 1fr 1fr; /* Dua kolom */
+        gap: 10px;
+    }
+    .nik {
+        width: 80%;
+    }
+    .nama-L {
+        width: 90%;
+    }
+}
+
+/* Laptop / Desktop (> 1024px) */
+@media (min-width: 1025px) {
+    /* Header */
+    header {
+        flex-direction: row;
+    }
+
+    /* Form */
+    .first-row-dd {
+        grid-template-columns: 0fr 0fr;
+    }
+    .nik {
+        width: 100px;
+    }
+    .nama-L {
+        width: 600px;
+    }
+}
